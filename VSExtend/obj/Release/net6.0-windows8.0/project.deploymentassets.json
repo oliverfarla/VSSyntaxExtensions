@@ -1,0 +1,788 @@
+{
+  "assets": [
+    {
+      "SourceFileName": "D:\\Code\\Acuren\\Oliver\\VSSyntaxExtensions\\VSExtend\\bin\\Release\\net6.0-windows8.0\\.vsextension\\extension.json",
+      "RelativeDestinationFileName": ".vsextension\\extension.json"
+    },
+    {
+      "SourceFileName": "D:\\Code\\Acuren\\Oliver\\VSSyntaxExtensions\\VSExtend\\bin\\Release\\net6.0-windows8.0\\extension.vsixmanifest",
+      "RelativeDestinationFileName": "extension.vsixmanifest"
+    },
+    {
+      "SourceFileName": "D:\\Code\\Acuren\\Oliver\\VSSyntaxExtensions\\VSExtend\\obj\\Release\\net6.0-windows8.0\\VSExtend.dll",
+      "RelativeDestinationFileName": "VSExtend.dll"
+    },
+    {
+      "SourceFileName": "D:\\Code\\Acuren\\Oliver\\VSSyntaxExtensions\\VSExtend\\.vsextension\\string-resources.json",
+      "RelativeDestinationFileName": ".vsextension\\string-resources.json"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\messagepack\\2.5.108\\lib\\net6.0\\MessagePack.dll",
+      "RelativeDestinationFileName": "MessagePack.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\messagepack.annotations\\2.5.108\\lib\\netstandard2.0\\MessagePack.Annotations.dll",
+      "RelativeDestinationFileName": "MessagePack.Annotations.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\lib\\netstandard2.1\\Microsoft.Bcl.AsyncInterfaces.dll",
+      "RelativeDestinationFileName": "Microsoft.Bcl.AsyncInterfaces.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\lib\\net5.0\\Microsoft.Extensions.DependencyInjection.dll",
+      "RelativeDestinationFileName": "Microsoft.Extensions.DependencyInjection.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\lib\\netstandard2.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "RelativeDestinationFileName": "Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.net.stringtools\\17.7.0-preview-23308-03\\lib\\netstandard2.0\\Microsoft.NET.StringTools.dll",
+      "RelativeDestinationFileName": "Microsoft.NET.StringTools.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\Microsoft.ServiceHub.Framework.dll",
+      "RelativeDestinationFileName": "Microsoft.ServiceHub.Framework.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\Microsoft.VisualStudio.Composition.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Composition.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.coreutility\\17.8.113-preview\\lib\\netstandard2.0\\Microsoft.VisualStudio.CoreUtility.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.CoreUtility.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\Microsoft.VisualStudio.Extensibility.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Extensibility.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\Microsoft.VisualStudio.Extensibility.Contracts.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Extensibility.Contracts.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.editor\\17.8.113-preview\\lib\\netstandard2.0\\Microsoft.VisualStudio.Extensibility.Editor.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Extensibility.Editor.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.editor.contracts\\17.8.113-preview\\lib\\netstandard2.0\\Microsoft.VisualStudio.Extensibility.Editor.Contracts.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Extensibility.Editor.Contracts.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.editorhostservice\\17.8.113-preview\\lib\\netstandard2.0\\Microsoft.VisualStudio.Extensibility.EditorHostService.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Extensibility.EditorHostService.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\Microsoft.VisualStudio.Extensibility.Framework.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Extensibility.Framework.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.imaging.interop.14.0.designtime\\17.4.0-preview-1-32727-351\\lib\\netstandard2.0\\Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\Microsoft.VisualStudio.ProjectSystem.Query.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.ProjectSystem.Query.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.remotecontrol\\16.3.52\\lib\\netstandard2.0\\Microsoft.VisualStudio.RemoteControl.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.RemoteControl.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.rpccontracts\\17.7.9\\lib\\net6.0\\Microsoft.VisualStudio.RpcContracts.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.RpcContracts.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.telemetry\\17.7.47\\lib\\netstandard2.0\\Microsoft.VisualStudio.Telemetry.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Telemetry.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.text.core.implementation\\17.8.113-preview\\lib\\netstandard2.0\\Microsoft.VisualStudio.Text.Core.Implementation.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Text.Core.Implementation.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.text.data\\17.8.113-preview\\lib\\netstandard2.0\\Microsoft.VisualStudio.Text.Data.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Text.Data.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.text.logic\\17.8.113-preview\\lib\\netstandard2.0\\Microsoft.VisualStudio.Text.Logic.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Text.Logic.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\Microsoft.VisualStudio.Threading.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Threading.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.utilities\\17.7.36673\\lib\\net6.0-windows8.0\\Microsoft.VisualStudio.Utilities.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Utilities.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.utilities.internal\\16.3.42\\lib\\netstandard2.0\\Microsoft.VisualStudio.Utilities.Internal.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Utilities.Internal.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\Microsoft.VisualStudio.Validation.dll",
+      "RelativeDestinationFileName": "Microsoft.VisualStudio.Validation.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\lib\\net6.0\\Microsoft.Win32.SystemEvents.dll",
+      "RelativeDestinationFileName": "Microsoft.Win32.SystemEvents.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\nerdbank.streams\\2.10.69\\lib\\netstandard2.1\\Nerdbank.Streams.dll",
+      "RelativeDestinationFileName": "Nerdbank.Streams.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\net6.0\\Newtonsoft.Json.dll",
+      "RelativeDestinationFileName": "Newtonsoft.Json.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\StreamJsonRpc.dll",
+      "RelativeDestinationFileName": "StreamJsonRpc.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.collections.immutable\\7.0.0\\lib\\net6.0\\System.Collections.Immutable.dll",
+      "RelativeDestinationFileName": "System.Collections.Immutable.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.componentmodel.composition\\7.0.0\\lib\\net6.0\\System.ComponentModel.Composition.dll",
+      "RelativeDestinationFileName": "System.ComponentModel.Composition.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.composition.attributedmodel\\7.0.0\\lib\\net6.0\\System.Composition.AttributedModel.dll",
+      "RelativeDestinationFileName": "System.Composition.AttributedModel.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.composition.convention\\7.0.0\\lib\\net6.0\\System.Composition.Convention.dll",
+      "RelativeDestinationFileName": "System.Composition.Convention.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.composition.hosting\\7.0.0\\lib\\net6.0\\System.Composition.Hosting.dll",
+      "RelativeDestinationFileName": "System.Composition.Hosting.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.composition.runtime\\7.0.0\\lib\\net6.0\\System.Composition.Runtime.dll",
+      "RelativeDestinationFileName": "System.Composition.Runtime.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.composition.typedparts\\7.0.0\\lib\\net6.0\\System.Composition.TypedParts.dll",
+      "RelativeDestinationFileName": "System.Composition.TypedParts.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\lib\\net6.0\\System.Configuration.ConfigurationManager.dll",
+      "RelativeDestinationFileName": "System.Configuration.ConfigurationManager.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.2\\lib\\net6.0\\System.Diagnostics.DiagnosticSource.dll",
+      "RelativeDestinationFileName": "System.Diagnostics.DiagnosticSource.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.diagnostics.performancecounter\\7.0.0\\lib\\net6.0\\System.Diagnostics.PerformanceCounter.dll",
+      "RelativeDestinationFileName": "System.Diagnostics.PerformanceCounter.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.drawing.common\\7.0.0\\lib\\net6.0\\System.Drawing.Common.dll",
+      "RelativeDestinationFileName": "System.Drawing.Common.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.io.pipelines\\7.0.0\\lib\\net6.0\\System.IO.Pipelines.dll",
+      "RelativeDestinationFileName": "System.IO.Pipelines.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.management\\5.0.0\\lib\\netstandard2.0\\System.Management.dll",
+      "RelativeDestinationFileName": "System.Management.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\lib\\net6.0\\System.Reflection.Metadata.dll",
+      "RelativeDestinationFileName": "System.Reflection.Metadata.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\lib\\net6.0\\System.Security.Cryptography.ProtectedData.dll",
+      "RelativeDestinationFileName": "System.Security.Cryptography.ProtectedData.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.security.permissions\\7.0.0\\lib\\net6.0\\System.Security.Permissions.dll",
+      "RelativeDestinationFileName": "System.Security.Permissions.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\lib\\net6.0\\System.Text.Encodings.Web.dll",
+      "RelativeDestinationFileName": "System.Text.Encodings.Web.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.text.json\\7.0.2\\lib\\net6.0\\System.Text.Json.dll",
+      "RelativeDestinationFileName": "System.Text.Json.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.threading.accesscontrol\\7.0.0\\lib\\net6.0\\System.Threading.AccessControl.dll",
+      "RelativeDestinationFileName": "System.Threading.AccessControl.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.threading.tasks.dataflow\\7.0.0\\lib\\net6.0\\System.Threading.Tasks.Dataflow.dll",
+      "RelativeDestinationFileName": "System.Threading.Tasks.Dataflow.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.windows.extensions\\7.0.0\\lib\\net6.0\\System.Windows.Extensions.dll",
+      "RelativeDestinationFileName": "System.Windows.Extensions.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\cs\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "cs\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\de\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "de\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\es\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "es\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\fr\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "fr\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\it\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "it\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\ja\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "ja\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\ko\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "ko\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\pl\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "pl\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\pt-BR\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "pt-BR\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\ru\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "ru\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\tr\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "tr\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\zh-Hans\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "zh-Hans\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.framework\\4.3.48\\lib\\net6.0\\zh-Hant\\Microsoft.ServiceHub.Framework.resources.dll",
+      "RelativeDestinationFileName": "zh-Hant\\Microsoft.ServiceHub.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\cs\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "cs\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\de\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "de\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\es\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "es\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\fr\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "fr\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\it\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "it\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\ja\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "ja\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\ko\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "ko\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\pl\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "pl\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\pt-BR\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "pt-BR\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\ru\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "ru\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\tr\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "tr\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\zh-Hans\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "zh-Hans\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.servicehub.resources\\4.3.231\\lib\\netstandard2.0\\zh-Hant\\Microsoft.ServiceHub.Resources.dll",
+      "RelativeDestinationFileName": "zh-Hant\\Microsoft.ServiceHub.Resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\cs\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "cs\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\de\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "de\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\es\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "es\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\fr\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "fr\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\it\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "it\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\ja\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "ja\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\ko\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "ko\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\pl\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "pl\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\pt-BR\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "pt-BR\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\ru\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "ru\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\tr\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "tr\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\zh-Hans\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "zh-Hans\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.composition\\17.7.13\\lib\\net6.0\\zh-Hant\\Microsoft.VisualStudio.Composition.resources.dll",
+      "RelativeDestinationFileName": "zh-Hant\\Microsoft.VisualStudio.Composition.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\cs\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "cs\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\de\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "de\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\es\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "es\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\fr\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "fr\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\it\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "it\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\ja\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "ja\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\ko\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "ko\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\pl\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "pl\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\pt-BR\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "pt-BR\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\ru\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "ru\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\tr\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "tr\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\zh-Hans\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "zh-Hans\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\zh-Hant\\Microsoft.VisualStudio.Extensibility.resources.dll",
+      "RelativeDestinationFileName": "zh-Hant\\Microsoft.VisualStudio.Extensibility.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\cs\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "cs\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\de\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "de\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\es\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "es\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\fr\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "fr\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\it\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "it\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\ja\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "ja\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\ko\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "ko\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\pl\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "pl\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\pt-BR\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "pt-BR\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\ru\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "ru\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\tr\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "tr\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\zh-Hans\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "zh-Hans\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.contracts\\17.8.2055-preview-3\\lib\\netstandard2.0\\zh-Hant\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll",
+      "RelativeDestinationFileName": "zh-Hant\\Microsoft.VisualStudio.Extensibility.Contracts.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\cs\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "cs\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\de\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "de\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\es\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "es\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\fr\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "fr\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\it\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "it\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\ja\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "ja\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\ko\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "ko\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\pl\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "pl\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\pt-BR\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "pt-BR\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\ru\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "ru\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\tr\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "tr\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\zh-Hans\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "zh-Hans\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.extensibility.framework\\17.8.2055-preview-3\\lib\\net6.0-windows8.0\\zh-Hant\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll",
+      "RelativeDestinationFileName": "zh-Hant\\Microsoft.VisualStudio.Extensibility.Framework.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\cs\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "cs\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\de\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "de\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\es\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "es\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\fr\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "fr\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\it\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "it\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\ja\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "ja\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\ko\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "ko\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\pl\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "pl\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\pt-BR\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "pt-BR\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\ru\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "ru\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\tr\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "tr\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\zh-Hans\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "zh-Hans\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.projectsystem.query\\17.5.221-pre\\lib\\netstandard2.0\\zh-Hant\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll",
+      "RelativeDestinationFileName": "zh-Hant\\Microsoft.VisualStudio.ProjectSystem.Query.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\cs\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "cs\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\de\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "de\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\es\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "es\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\fr\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "fr\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\it\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "it\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\ja\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "ja\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\ko\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "ko\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\pl\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "pl\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\pt-BR\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "pt-BR\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\ru\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "ru\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\tr\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "tr\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\zh-Hans\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "zh-Hans\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.threading\\17.7.28\\lib\\net6.0-windows7.0\\zh-Hant\\Microsoft.VisualStudio.Threading.resources.dll",
+      "RelativeDestinationFileName": "zh-Hant\\Microsoft.VisualStudio.Threading.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.utilities\\17.7.36673\\lib\\net6.0-windows8.0\\en\\Microsoft.VisualStudio.Utilities.resources.dll",
+      "RelativeDestinationFileName": "en\\Microsoft.VisualStudio.Utilities.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\cs\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "cs\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\de\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "de\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\es\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "es\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\fr\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "fr\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\it\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "it\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\ja\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "ja\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\ko\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "ko\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\pl\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "pl\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\pt-BR\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "pt-BR\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\ru\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "ru\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\tr\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "tr\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\zh-Hans\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "zh-Hans\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.visualstudio.validation\\17.6.11\\lib\\net6.0\\zh-Hant\\Microsoft.VisualStudio.Validation.resources.dll",
+      "RelativeDestinationFileName": "zh-Hant\\Microsoft.VisualStudio.Validation.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\cs\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "cs\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\de\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "de\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\es\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "es\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\fr\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "fr\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\it\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "it\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\ja\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "ja\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\ko\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "ko\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\pl\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "pl\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\pt-BR\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "pt-BR\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\ru\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "ru\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\tr\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "tr\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\zh-Hans\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "zh-Hans\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\streamjsonrpc\\2.16.29\\lib\\netstandard2.1\\zh-Hant\\StreamJsonRpc.resources.dll",
+      "RelativeDestinationFileName": "zh-Hant\\StreamJsonRpc.resources.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\runtimes\\win\\lib\\net6.0\\Microsoft.Win32.SystemEvents.dll",
+      "RelativeDestinationFileName": "runtimes\\win\\lib\\net6.0\\Microsoft.Win32.SystemEvents.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.diagnostics.performancecounter\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.PerformanceCounter.dll",
+      "RelativeDestinationFileName": "runtimes\\win\\lib\\net6.0\\System.Diagnostics.PerformanceCounter.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.drawing.common\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Drawing.Common.dll",
+      "RelativeDestinationFileName": "runtimes\\win\\lib\\net6.0\\System.Drawing.Common.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.management\\5.0.0\\runtimes\\win\\lib\\netcoreapp2.0\\System.Management.dll",
+      "RelativeDestinationFileName": "runtimes\\win\\lib\\netcoreapp2.0\\System.Management.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Security.Cryptography.ProtectedData.dll",
+      "RelativeDestinationFileName": "runtimes\\win\\lib\\net6.0\\System.Security.Cryptography.ProtectedData.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\runtimes\\browser\\lib\\net6.0\\System.Text.Encodings.Web.dll",
+      "RelativeDestinationFileName": "runtimes\\browser\\lib\\net6.0\\System.Text.Encodings.Web.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.threading.accesscontrol\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Threading.AccessControl.dll",
+      "RelativeDestinationFileName": "runtimes\\win\\lib\\net6.0\\System.Threading.AccessControl.dll"
+    },
+    {
+      "SourceFileName": "C:\\Users\\ofarla\\.nuget\\packages\\system.windows.extensions\\7.0.0\\runtimes\\win\\lib\\net6.0\\System.Windows.Extensions.dll",
+      "RelativeDestinationFileName": "runtimes\\win\\lib\\net6.0\\System.Windows.Extensions.dll"
+    }
+  ]
+}

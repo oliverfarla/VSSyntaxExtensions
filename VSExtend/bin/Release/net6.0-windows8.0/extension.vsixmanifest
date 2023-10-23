@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="VSExtend.b686ef9f-a5f0-485a-b046-f77f3527c17b" Version="1.0.0.0" Language="neutral" Publisher="Publisher name" />
+    <DisplayName>VSExtend</DisplayName>
+  </Metadata>
+  <Installation ExtensionType="VisualStudio.Extensibility">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.8,18.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.8,18.0)">
+      <ProductArchitecture>arm64</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.8,)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ofarla\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.8.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\ofarla\.nuget\packages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.visualstudio.extensibility.jsongenerators.sdk\17.8.2055-preview-3\build\Microsoft.VisualStudio.Extensibility.JsonGenerators.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.extensibility.jsongenerators.sdk\17.8.2055-preview-3\build\Microsoft.VisualStudio.Extensibility.JsonGenerators.Sdk.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_VisualStudio_Threading_Analyzers Condition=" '$(PkgMicrosoft_VisualStudio_Threading_Analyzers)' == '' ">C:\Users\ofarla\.nuget\packages\microsoft.visualstudio.threading.analyzers\17.7.28</PkgMicrosoft_VisualStudio_Threading_Analyzers>
+    <PkgMicrosoft_VisualStudio_Composition_Analyzers Condition=" '$(PkgMicrosoft_VisualStudio_Composition_Analyzers)' == '' ">C:\Users\ofarla\.nuget\packages\microsoft.visualstudio.composition.analyzers\17.7.13</PkgMicrosoft_VisualStudio_Composition_Analyzers>
+    <PkgMicrosoft_ServiceHub_Analyzers Condition=" '$(PkgMicrosoft_ServiceHub_Analyzers)' == '' ">C:\Users\ofarla\.nuget\packages\microsoft.servicehub.analyzers\4.3.48</PkgMicrosoft_ServiceHub_Analyzers>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!--  This is the file that defines the actual layout and type of the commands.
+        It is divided in different sections (e.g. command definition, command
+        placement, ...), with each defining a specific set of properties.
+        See the comment before each section for more details about how to
+        use it. -->
+
+  <!--  The VSCT compiler (the tool that translates this file into the binary
+        format that VisualStudio will consume) has the ability to run a preprocessor
+        on the vsct file; this preprocessor is (usually) the C++ preprocessor, so
+        it is possible to define includes and macros with the same syntax used
+        in C++ files. Using this ability of the compiler here, we include some files
+        defining some of the constants that we will use inside the file. -->
+
+  <!--This is the file that defines the IDs for all the commands exposed by VisualStudio. -->
+  <Extern href="stdidcmd.h" />
+
+  <!--This header contains the command ids for the menus provided by the shell. -->
+  <Extern href="vsshlids.h" />
+
+  <!--The Commands section is where commands, menus, and menu groups are defined.
+      This section uses a Guid to identify the package that provides the command defined inside it. -->
+  <Commands package="guidVSSyntaxExtensionsPackage">
+    <!-- Inside this section we have different sub-sections: one for the menus, another
+    for the menu groups, one for the buttons (the actual commands), one for the combos
+    and the last one for the bitmaps used. Each element is identified by a command id that
+    is a unique pair of guid and numeric identifier; the guid part of the identifier is usually
+    called "command set" and is used to group different command inside a logically related
+    group; your package should define its own command set in order to avoid collisions
+    with command ids defined by other packages. -->
+
+    <!-- In this section you can define new menu groups. A menu group is a container for
+         other menus or buttons (commands); from a visual point of view you can see the
+         group as the part of a menu contained between two lines. The parent of a group
+         must be a menu. -->
+    <Groups>
+      <Group guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+      </Group>
+    </Groups>
+
+    <!--Buttons section. -->
+    <!--This section defines the elements the user can interact with, like a menu command or a button
+        or combo box in a toolbar. -->
+    <Buttons>
+      <!--To define a menu group you have to specify its ID, the parent menu and its display priority.
+          The command is visible and enabled by default. If you need to change the visibility, status, etc, you can use
+          the CommandFlag node.
+          You can add more than one CommandFlag node e.g.:
+              <CommandFlag>DefaultInvisible</CommandFlag>
+              <CommandFlag>DynamicVisibility</CommandFlag>
+          If you do not want an image next to your command, remove the Icon node /> -->
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="ExpandSelectionId" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke ExpandSelection</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="cmdidExpandSelectionInner" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages1" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke ExpandSelectionInner</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="cmdidExpandSelectionOuter" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages2" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke ExpandSelectionOuter</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="cmdidMoveParameterRight" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages3" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke MoveParameterRight</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="cmdidMoveParameterLeft" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages4" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke MoveParameterLeft</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="cmdidDialogTest" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages5" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke DialogTest</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="cmdidShowRecentFilesDialog" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages6" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke ShowRecentFilesDialog</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="cmdidSelectFunctionOuter" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages7" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke SelectFunctionOuter</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="cmdidSelectFunctionInner" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages8" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke SelectFunctionInner</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="cmdidSelectNodeListInner" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages9" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke SelectNodeListInner</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="cmdidShrinkSelection" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages10" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke ShrinkSelection</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSSyntaxExtensionsPackageCmdSet" id="cmdidDoGrep" priority="0x0100" type="Button">
+        <Parent guid="guidVSSyntaxExtensionsPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages11" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke DoGrep</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+
+    <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
+    <Bitmaps>
+      <!--  The bitmap id is defined in a way that is a little bit different from the others:
+            the declaration starts with a guid for the bitmap strip, then there is the resource id of the
+            bitmap strip containing the bitmaps and then there are the numeric ids of the elements used
+            inside a button definition. An important aspect of this declaration is that the element id
+            must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
+      <Bitmap guid="guidImages" href="Resources\ExpandSelection.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages1" href="Resources\ExpandSelectionInner.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages2" href="Resources\ExpandSelectionOuter.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages3" href="Resources\MoveParameterRight.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages4" href="Resources\MoveParameterLeft.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages5" href="Resources\DialogTest.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages6" href="Resources\ShowRecentFilesDialog.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages7" href="Resources\SelectFunctionOuter.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages8" href="Resources\SelectFunctionInner.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages9" href="Resources\SelectNodeListInner.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages10" href="Resources\ShrinkSelection.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages11" href="Resources\DoGrep.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+    </Bitmaps>
+  </Commands>
+
+  <Symbols>
+    <!-- This is the package guid. -->
+    <GuidSymbol name="guidVSSyntaxExtensionsPackage" value="{eb25b805-f265-4e2f-b255-cffcd0538ba0}" />
+
+    <!-- This is the guid used to group the menu commands together -->
+    <GuidSymbol name="guidVSSyntaxExtensionsPackageCmdSet" value="{1c6bc961-9f4d-49ac-8a11-b4f37e3382ea}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="ExpandSelectionId" value="0x0100" />
+      <IDSymbol value="4129" name="cmdidExpandSelectionInner" />
+      <IDSymbol value="4130" name="cmdidExpandSelectionOuter" />
+      <IDSymbol value="4131" name="cmdidMoveParameterRight" />
+      <IDSymbol value="4132" name="cmdidMoveParameterLeft" />
+      <IDSymbol value="4133" name="cmdidDialogTest" />
+      <IDSymbol value="4134" name="cmdidShowRecentFilesDialog" />
+      <IDSymbol value="4135" name="cmdidSelectFunctionOuter" />
+      <IDSymbol value="4136" name="cmdidSelectFunctionInner" />
+      <IDSymbol value="4137" name="cmdidSelectNodeListInner" />
+      <IDSymbol value="4138" name="cmdidShrinkSelection" />
+      <IDSymbol value="4139" name="cmdidDoGrep" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidImages" value="{79c3437a-f40f-420e-a4db-d02e922ce07e}">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{6aef8af2-55d3-4be1-844f-32782075951e}" name="guidImages1">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{4a343130-d6ec-42d9-862a-8d4c24e70f78}" name="guidImages2">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{a4416e39-851e-423a-af04-c9cd981ee7f7}" name="guidImages3">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{0584f530-a887-4c27-a8b3-9b05316c9968}" name="guidImages4">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{2cfc62ef-2598-4622-a94b-ba4019f66e1d}" name="guidImages5">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{312420f0-0c92-4e2d-86f0-155a3723f204}" name="guidImages6">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{4ea9ea20-a7f5-4b94-b51a-a74a2b23c133}" name="guidImages7">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{fb80edd2-c266-4f20-9973-d9e1fe8012ad}" name="guidImages8">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{a6370a98-1e38-4c3a-924e-515d5c183889}" name="guidImages9">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{f87bbffc-928f-44bc-bc0c-64d1002e3d5d}" name="guidImages10">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{891f097a-a900-4a05-988e-07ba4213655f}" name="guidImages11">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

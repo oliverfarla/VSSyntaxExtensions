@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Code\\Acuren\\Oliver\\VSSyntaxExtensions\\VSExtendWithTool\\VSExtendWithTool.csproj": {}
+  },
+  "projects": {
+    "D:\\Code\\Acuren\\Oliver\\VSSyntaxExtensions\\VSExtendWithTool\\VSExtendWithTool.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Acuren\\Oliver\\VSSyntaxExtensions\\VSExtendWithTool\\VSExtendWithTool.csproj",
+        "projectName": "VSExtendWithTool",
+        "projectPath": "D:\\Code\\Acuren\\Oliver\\VSSyntaxExtensions\\VSExtendWithTool\\VSExtendWithTool.csproj",
+        "packagesPath": "C:\\Users\\ofarla\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Acuren\\Oliver\\VSSyntaxExtensions\\VSExtendWithTool\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\ofarla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Community.VisualStudio.Toolkit.17": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[17.0.430, )"
+            },
+            "Community.VisualStudio.VSCT": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[16.0.29.6, )"
+            },
+            "Microsoft.VSSDK.BuildTools": {
+              "target": "Package",
+              "version": "[17.0.5232, )",
+              "generatePathProperty": true
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

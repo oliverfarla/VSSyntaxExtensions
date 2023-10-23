@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ExtensibilityEssentialsInstalled>true</ExtensibilityEssentialsInstalled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartProgram>C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\devenv.exe</StartProgram>
+    <DeployTargetInstanceId>c6e838b7</DeployTargetInstanceId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartProgram>C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe</StartProgram>
+    <DeployTargetInstanceId>dc34b4bf</DeployTargetInstanceId>
+  </PropertyGroup>
+</Project>

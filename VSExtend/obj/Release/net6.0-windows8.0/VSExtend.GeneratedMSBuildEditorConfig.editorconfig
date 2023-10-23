@@ -1,0 +1,29 @@
+is_global = true
+build_property.DefaultNamespace = 
+build_property.OutDir = bin\Release\net6.0-windows8.0\
+build_property.MSBuildProjectDirectory = D:\Code\Acuren\Oliver\VSSyntaxExtensions\VSExtend
+build_property.ImageAssetsPath = Images
+build_property.TargetFramework = net6.0-windows8.0
+build_property.TargetPlatformMinVersion = 8.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = VSExtend
+build_property.ProjectDir = D:\Code\Acuren\Oliver\VSSyntaxExtensions\VSExtend\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/ofarla/.nuget/packages/microsoft.visualstudio.threading.analyzers/17.7.28/build/AdditionalFiles/vs-threading.LegacyThreadSwitchingMembers.txt]
+build_metadata.AdditionalFiles.ExtensionMetadata = 
+
+[C:/Users/ofarla/.nuget/packages/microsoft.visualstudio.threading.analyzers/17.7.28/build/AdditionalFiles/vs-threading.MainThreadAssertingMethods.txt]
+build_metadata.AdditionalFiles.ExtensionMetadata = 
+
+[C:/Users/ofarla/.nuget/packages/microsoft.visualstudio.threading.analyzers/17.7.28/build/AdditionalFiles/vs-threading.MainThreadSwitchingMethods.txt]
+build_metadata.AdditionalFiles.ExtensionMetadata = 
+
+[C:/Users/ofarla/.nuget/packages/microsoft.visualstudio.threading.analyzers/17.7.28/build/AdditionalFiles/vs-threading.MembersRequiringMainThread.txt]
+build_metadata.AdditionalFiles.ExtensionMetadata = 
