@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/VSSyntaxExtensions/bin
+/VSSyntaxExtensions/obj
+/.vs/VSSyntaxExtensions/FileContentIndex/044741d0-657a-430b-9a46-f6970996e3eb.vsidx
+/.vs/VSSyntaxExtensions/FileContentIndex/3bae6362-27ae-486a-937c-5ec718f7378e.vsidx
+/.vs/VSSyntaxExtensions/FileContentIndex/9edba52b-9c12-4259-807d-0b826478cc16.vsidx
+/.vs/VSSyntaxExtensions/FileContentIndex/b455dbc3-d79e-4ae1-998a-8fc9d686f47c.vsidx
+/.vs/VSSyntaxExtensions/FileContentIndex/cc271f6a-d506-47b0-a220-8d77fc9479e3.vsidx
+/.vs/VSSyntaxExtensions/FileContentIndex/da0edfe7-7fb9-4a1b-a932-5d9054ccc5d5.vsidx
+/.vs/VSSyntaxExtensions/v17/TestStore/0/000.testlog
+/.vs/VSSyntaxExtensions/v17/.suo
