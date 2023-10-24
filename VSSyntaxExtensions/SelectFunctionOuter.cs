@@ -108,7 +108,7 @@ namespace VSSyntaxExtensions
 
             var token = root.FindToken(caretPosition);
 
-            var r = token.FindNodeOfType<MethodDeclarationSyntax, MethodDeclarationSyntax>(x => x);
+            var r = token.FindParentOfType<MethodDeclarationSyntax, MethodDeclarationSyntax>(x => x);
             if (r == null)
                 return;
 

@@ -94,23 +94,28 @@ namespace VSSyntaxExtensions
         private void Execute(object sender, EventArgs e)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
-            var workspace = Helpers.GetWorkspace();
-            var sol = workspace.CurrentSolution;
-            if (sol == null)
-                return;
-            var allFiles = sol.Projects.SelectMany(x => x.Documents.Select(y => y.FilePath)).ToList();
+
+            var allFiles = GetAllSolutionFiles();
             if (allFiles.Count == 0)
                 return;
-
-
             var dlg = new GrepWindow()
             {
                 FilePaths = allFiles,
                 package = this.package,
             };
-            dlg.Load();
+            dlg.reload();
             dlg.ShowDialog();
 
+        }
+
+        public static List<string> GetAllSolutionFiles()
+        {
+            var workspace = Helpers.GetWorkspace();
+            var sol = workspace.CurrentSolution;
+            if (sol == null)
+                return new List<string>();
+            var allFiles = sol.Projects.SelectMany(x => x.Documents.Select(y => y.FilePath)).ToList();
+            return allFiles;
         }
         public static void DoSearch2(IReadOnlyList<string> fileNames, string search, Action<GrepResult> onResult, CancellationToken ct)
         {

@@ -1,5 +1,4 @@
-﻿using EnvDTE80;
-using Microsoft.CodeAnalysis;
+﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.FlowAnalysis.DataFlow;
 using Microsoft.CodeAnalysis.Text;
@@ -7,6 +6,7 @@ using Microsoft.VisualStudio.ComponentModelHost;
 using Microsoft.VisualStudio.LanguageServices;
 using Microsoft.VisualStudio.PlatformUI;
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.TextManager.Interop;
@@ -76,28 +76,19 @@ namespace VSSyntaxExtensions
 
     public static class Helpers
     {
-        public static void OpenDocument(this AsyncPackage package, string path)
-        {
-            Microsoft.VisualStudio.Shell.VsShellUtilities.OpenDocument(package, path);
-        }
-
-        public static void DoWithUndo(AsyncPackage package, Action<IWpfTextView> action)
+        public static EnvDTE.DTE GetDTE()
         {
             ThreadHelper.ThrowIfNotOnUIThread();
-            var serviceProvider = package as System.IServiceProvider;
-            var DTE = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
-            try
-            {
-                DTE.UndoContext.Open("Description of operation");
-                Microsoft.VisualStudio.Text.Editor.IWpfTextView textView = serviceProvider.GetTextView();
-                action(textView);
-            }
-            finally
-            {
-                DTE.UndoContext.Close();
-            }
+            var dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
+            return dte;
         }
 
+        public static EnvDTE80.DTE2 GetDTE2()
+        {
+
+            var dte = Package.GetGlobalService(typeof(Microsoft.VisualStudio.Shell.Interop.SDTE)) as EnvDTE80.DTE2;
+            return dte;
+        }
         public static VisualStudioWorkspace GetWorkspace()
         {
             var componentModel = (IComponentModel)Microsoft.VisualStudio.Shell.Package.GetGlobalService(typeof(SComponentModel));
@@ -118,7 +109,29 @@ namespace VSSyntaxExtensions
         }
 
 
-        public static NodeX FindParent(Document document, IWpfTextView textView, NodeX item, Span curr, bool? forceIsInner, List<NodeX> list)
+        public static void OpenDocument(this AsyncPackage package, string path)
+        {
+            VsShellUtilities.OpenDocument(package, path);
+        }
+
+        public static void AtomicTextAction(AsyncPackage package, Action<IWpfTextView> action)
+        {
+            ThreadHelper.ThrowIfNotOnUIThread();
+            var serviceProvider = package as System.IServiceProvider;
+            var DTE = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
+            try
+            {
+                DTE.UndoContext.Open("Description of operation");
+                var textView = serviceProvider.GetTextView();
+                action(textView);
+            }
+            finally
+            {
+                DTE.UndoContext.Close();
+            }
+        }
+
+        public static NodeX FindLargerParent(Document document, IWpfTextView textView, NodeX item, Span curr, bool? forceIsInner, List<NodeX> list)
         {
             list.Add(item);
             var itemSpan = item.GetSpan();
@@ -127,7 +140,7 @@ namespace VSSyntaxExtensions
                 return item;
 
             var parent = item.GetParent();
-            return FindParent(document, textView, parent, curr, forceIsInner, list);
+            return FindLargerParent(document, textView, parent, curr, forceIsInner, list);
         }
 
         public static void SelectNode(IWpfTextView textView, SyntaxNode node, bool includeTrivia, bool includeBraces)
@@ -160,7 +173,7 @@ namespace VSSyntaxExtensions
             textView.Selection.Select(sn, false);
         }
 
-        public static void DoSelection(IWpfTextView textView, bool? forceIsInner, bool moveCaret, bool expand)
+        public static void GrowShrinkSelection(IWpfTextView textView, bool? forceIsInner, bool moveCaret, bool grow)
         {
             var start = textView.Selection.Start.Position.Position;
             var end = textView.Selection.End.Position.Position;
@@ -182,9 +195,9 @@ namespace VSSyntaxExtensions
                               FindToken(caretPosition).Parent;
             var node = new NodeX(item, false, forceIsInner);
             var nodes = new List<NodeX>();
-            var nodex = FindParent(document, textView, node, curr, forceIsInner, nodes);
+            var nodex = FindLargerParent(document, textView, node, curr, forceIsInner, nodes);
             var sp = nodex.GetSpan();
-            if (expand == false)
+            if (grow == false)
             {
                 for (int i = nodes.Count - 1; i >= 0; i--)
                 {
@@ -207,23 +220,15 @@ namespace VSSyntaxExtensions
 
         public static (Document document, SyntaxNode parent, List<SyntaxNode> argList, int argumentIndex, int parentCount)? GetParentArgList<TNode, TParentNode>(IWpfTextView textView, Func<TParentNode, TNode, List<SyntaxNode>> getArguments) where TNode : SyntaxNode where TParentNode : SyntaxNode
         {
+            var caretPosition = textView.Caret.Position.BufferPosition;
 
-
-            SnapshotPoint caretPosition = textView.Caret.Position.BufferPosition;
-
-            Document document = caretPosition.Snapshot.GetOpenDocumentInCurrentContextWithChanges();
-
-            //var item = document.GetSyntaxRootAsync().Result.
-            //        FindToken(caretPosition);
-            //.Parent.AncestorsAndSelf().
-            //        OfType<Microsoft.CodeAnalysis.CSharp.Syntax.InvocationExpressionSyntax>().
-            //        FirstOrDefault();
+            var document = caretPosition.Snapshot.GetOpenDocumentInCurrentContextWithChanges();
 
             if (!document.TryGetSyntaxRoot(out var root))
                 return null;
 
             var token = root.FindToken(caretPosition);
-            var argumentRes = token.FindNodeOfType<TNode, TNode>(x => x);
+            var argumentRes = token.FindParentOfType<TNode, TNode>(x => x);
             if (argumentRes == null)
                 return null;
             var parentResult = argumentRes.Value.node.FindNodeOfType<TParentNode, List<SyntaxNode>>(x => getArguments(x, argumentRes.Value.result));
@@ -252,7 +257,7 @@ namespace VSSyntaxExtensions
             return FindParentOfType(node.Parent, true, types);
         }
 
-        public static (List<SyntaxNode> lst, SyntaxNode node, T result)? FindNodeOfType<TNode, T>(this SyntaxToken node, Func<TNode, T> f) where TNode : SyntaxNode
+        public static (List<SyntaxNode> lst, SyntaxNode node, T result)? FindParentOfType<TNode, T>(this SyntaxToken node, Func<TNode, T> f) where TNode : SyntaxNode
         {
             return FindNodeOfType<TNode, T>(node.Parent, f);
         }
@@ -329,17 +334,12 @@ namespace VSSyntaxExtensions
 
         }
 
-        public static DTE2 GetDTE2()
-        {
-
-            var dte = Package.GetGlobalService(typeof(Microsoft.VisualStudio.Shell.Interop.SDTE)) as DTE2;
-            return dte;
-        }
 
         public static void GoToDocumentLine(this AsyncPackage package, string filePath, int lineNum)
         {
             try
             {
+                ThreadHelper.ThrowIfNotOnUIThread();
                 VsShellUtilities.OpenDocument(package, filePath);
                 var DTE = GetDTE2();
                 foreach (EnvDTE.Document doc in DTE.Documents)

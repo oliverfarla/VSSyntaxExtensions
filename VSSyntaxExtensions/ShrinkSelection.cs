@@ -89,9 +89,8 @@ namespace VSSyntaxExtensions
         private void Execute(object sender, EventArgs e)
         {
             ThreadHelper.ThrowIfNotOnUIThread();
-            var serviceProvider = package as System.IServiceProvider;
-            Microsoft.VisualStudio.Text.Editor.IWpfTextView textView = serviceProvider.GetTextView();
-            Helpers.DoSelection(textView, null, false, false);
+            var textView = package.GetTextView();
+            Helpers.GrowShrinkSelection(textView, null, false, false);
 
         }
     }

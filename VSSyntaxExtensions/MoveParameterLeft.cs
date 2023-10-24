@@ -88,7 +88,7 @@ namespace VSSyntaxExtensions
         /// <param name="e">Event args.</param>
         private void Execute(object sender, EventArgs e)
         {
-            Helpers.DoWithUndo(package, textView => Helpers.MoveParameter(textView, -1));
+            Helpers.AtomicTextAction(package, textView => Helpers.MoveParameter(textView, -1));
         }
     }
 }

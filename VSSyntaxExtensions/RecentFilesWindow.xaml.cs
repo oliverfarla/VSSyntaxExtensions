@@ -10,9 +10,9 @@ using System.Windows.Media;
 
 namespace VSSyntaxExtensions
 {
-    public partial class MyToolWindowControl : DialogWindow
+    public partial class RecentFilesWindow : DialogWindow
     {
-        public MyToolWindowControl()
+        public RecentFilesWindow()
         {
             InitializeComponent();
             this.Loaded += MyToolWindowControl_Loaded;
@@ -84,7 +84,7 @@ namespace VSSyntaxExtensions
             }
             this.Close();
         }
-
+        
         private void list_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             DoItem();

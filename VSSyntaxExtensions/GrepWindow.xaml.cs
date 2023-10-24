@@ -16,6 +16,11 @@ namespace VSSyntaxExtensions
 {
     public partial class GrepWindow : DialogWindow
     {
+        public AsyncPackage package;
+        public List<string> FilePaths = new List<string>();
+        private List<DoGrep.GrepResult> currItems = new List<DoGrep.GrepResult>();
+        private int currIndex = 0;
+        private List<CancellationTokenSource> currTasks = new List<CancellationTokenSource>();
         public GrepWindow()
         {
             InitializeComponent();
@@ -32,28 +37,24 @@ namespace VSSyntaxExtensions
             //Resources.Add(typeof(TextBlock), style);
 
             //list.ItemContainerStyle = style;
-            Load();
+            reload();
         }
 
-        public AsyncPackage package;
-        public List<string> FilePaths = new List<string>();
-        public List<DoGrep.GrepResult> currItems = new List<DoGrep.GrepResult>();
-
-        int idx = 0;
 
 
-        public void Load()
+
+        public void reload(int offset = 0)
         {
+            currIndex += offset;
 
             if (list.Items.Count > 0)
             {
-                idx = (idx + list.Items.Count) % list.Items.Count;
-                list.SelectedIndex = idx;
+                currIndex = (currIndex + list.Items.Count) % list.Items.Count;
+                list.SelectedIndex = currIndex;
             }
             textbox.Focus();
         }
 
-        List<CancellationTokenSource> currCancles = new List<CancellationTokenSource>();
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -65,14 +66,16 @@ namespace VSSyntaxExtensions
             var str = textbox.Text;
             if (str.Length < 3)
                 return;
-            foreach (var c in this.currCancles)
+            foreach (var c in this.currTasks)
                 c.Cancel();
-            this.currCancles.Clear();
-            var cts = new CancellationTokenSource();
-            currCancles.Add(cts);
+
+            this.currTasks.Clear();
             this.list.Items.Clear();
-            currItems.Clear();
-            Task.Run(() =>
+            this.currItems.Clear();
+
+            var cts = new CancellationTokenSource();
+            this.currTasks.Add(cts);
+            _ = Task.Run(() =>
             {
                 DoGrep.DoSearch2(this.FilePaths, str, r =>
                 {
@@ -98,55 +101,41 @@ namespace VSSyntaxExtensions
             });
         }
 
-        private void Grid_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
-        {
-            if (e.Key == System.Windows.Input.Key.Enter)
-            {
-                DoItem();
-            }
-            textbox.Focus();
-        }
 
-        private void DoItem()
+
+        private void ChooseCurrItem()
         {
 
+            reload();
             if (list.Items.Count > 0)
             {
-                var idx = 0;
-                if (list.SelectedIndex >= 0 && list.SelectedIndex < list.Items.Count)
-                {
-                    idx = list.SelectedIndex;
-                }
-                var item = currItems[idx];
-                
-
+                var item = currItems[currIndex];
                 package.GoToDocumentLine(item.FilePath, item.LineNum);
-
             }
             this.Close();
         }
 
         private void list_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            DoItem();
+            ChooseCurrItem();
         }
 
+        //the key up/down stuff is pretty hacky, enter has to be keydown because of how the command is launched, and using key down for arrows doesn't seem to work with the textbox focus
+        private void Grid_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Enter)
+                ChooseCurrItem();
+            textbox.Focus();
+        }
         private void Grid_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
         {
             if (e.Key == System.Windows.Input.Key.Escape)
-            {
                 this.Close();
-            }
             if (e.Key == System.Windows.Input.Key.Down)
-            {
-                idx += 1;
-                Load();
-            }
+                reload(+1);
             if (e.Key == System.Windows.Input.Key.Up)
-            {
-                idx -= 1;
-                Load();
-            }
+                reload(-1);
+
             textbox.Focus();
 
         }

@@ -100,7 +100,7 @@ namespace VSSyntaxExtensions
             if (VSSyntaxExtensionsPackage.recentFiles.TryGetValue(VSSyntaxExtensionsPackage.currSol, out var curr))
             {
 
-                var dlg = new MyToolWindowControl()
+                var dlg = new RecentFilesWindow()
                 {
                     FilePaths = curr,
                     package = this.package,

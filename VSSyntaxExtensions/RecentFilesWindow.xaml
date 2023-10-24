@@ -1,5 +1,5 @@
 ﻿<platformui:DialogWindow  xmlns:platformui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.15.0"
-             x:Class="VSSyntaxExtensions.MyToolWindowControl"
+             x:Class="VSSyntaxExtensions.RecentFilesWindow"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"

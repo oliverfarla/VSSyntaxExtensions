@@ -91,7 +91,7 @@ namespace VSSyntaxExtensions
             ThreadHelper.ThrowIfNotOnUIThread();
             var serviceProvider = package as System.IServiceProvider;
             Microsoft.VisualStudio.Text.Editor.IWpfTextView textView = serviceProvider.GetTextView();
-            Helpers.DoSelection(textView, false, false, true);
+            Helpers.GrowShrinkSelection(textView, false, false, true);
         }
     }
 }
