@@ -7,3 +7,8 @@
 /.vs
 /TestingStuff/bin/Release
 /TestingStuff/obj
+/packages
+/.vs/VSSyntaxExtensions/FileContentIndex/4f92b363-c67e-41e9-8ceb-ea48b9754c60.vsidx
+/TestingStuff/bin/Debug
+/WPFTesting/bin
+/WPFTesting/obj
