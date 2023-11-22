@@ -10,6 +10,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
 
 namespace VSSyntaxExtensions
@@ -115,16 +116,37 @@ namespace VSSyntaxExtensions
             this.Close();
         }
 
+        private void Dofzf()
+        {
+            var tmpFile = System.IO.Path.GetTempFileName() + ".txt";
+            System.IO.File.WriteAllLines(tmpFile, FilePaths);
+            var result = DoGrep.DoFZF(tmpFile, textbox.Text);
+            var item = DoGrep.GrepResult.Create(result);
+            System.IO.File.Delete(tmpFile);
+            if (item == null)
+                return;
+            package.GoToDocumentLine(item.FilePath, item.LineNum);
+            this.Close();
+
+
+        }
         private void list_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             ChooseCurrItem();
         }
 
+
         //the key up/down stuff is pretty hacky, enter has to be keydown because of how the command is launched, and using key down for arrows doesn't seem to work with the textbox focus
         private void Grid_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
             if (e.Key == System.Windows.Input.Key.Enter)
-                ChooseCurrItem();
+            {
+                if (Keyboard.IsKeyDown(Key.LeftCtrl))
+                    Dofzf();
+                else
+                    ChooseCurrItem();
+
+            }
             textbox.Focus();
         }
         private void Grid_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
