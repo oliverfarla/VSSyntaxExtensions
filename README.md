@@ -33,7 +33,7 @@ Select function:
 ![](https://github.com/oliverfarla/VSSyntaxExtensions/blob/trunk/gifs/selectfunction.gif)
 
 
-Select more/less + move params:
+Select more/less, select parameters,  move param left/right:
 ![](https://github.com/oliverfarla/VSSyntaxExtensions/blob/trunk/gifs/selectmore_moveparams.gif)
 
 
