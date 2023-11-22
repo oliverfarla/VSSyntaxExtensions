@@ -18,6 +18,13 @@ namespace TestingStuff
         //}
         //public async static Task MainAsync(string[] args)
         {
+            
+            test2.Test(@"c:\temp\cc.txt", "numElems");
+            return;
+
+
+
+
             var basePath = @"d:\Code\BeamTool-11Dev";
             //basePath = @"D:\Code\BeamTool-11Dev\Eclipse\ESBeamTool";
             var allFiles = Directory.GetFiles(basePath, "*.cs", SearchOption.AllDirectories);//.Select(x=>x.Substring(basePath.Length)).ToList();
