@@ -18,3 +18,22 @@ commands:
 -MoveParameterRight
 
 -MoveParameterLeft
+
+
+
+Live Grep:
+(needs ripgrep, and optionally run with Ctrl+Enter (needs fzf & bat in the path environment variable)
+![](https://github.com/oliverfarla/VSSyntaxExtensions/blob/trunk/gifs/grep.gif)
+
+Recent files:
+![](https://github.com/oliverfarla/VSSyntaxExtensions/blob/trunk/gifs/recentfiles.gif)
+
+
+Select function:
+![](https://github.com/oliverfarla/VSSyntaxExtensions/blob/trunk/gifs/selectfunction.gif)
+
+
+Select more/less + move params:
+![](https://github.com/oliverfarla/VSSyntaxExtensions/blob/trunk/gifs/selectmore_moveparams.gif)
+
+
